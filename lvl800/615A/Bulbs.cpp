@@ -11,7 +11,7 @@ int main(void)
         k = false;
     }
     cin >> n >> m;
-    int a, s,i,j;
+    int a, s,i,j; //instead of creating each time will declare once
     for(i = 1; i <= n;i++){
         cin >> a;
         for(j = 1; j <= a;j++){
@@ -20,10 +20,10 @@ int main(void)
         }
     }
     bool flag = true;
-    for(i = 1; flag && i <= m;i++)
+    for(i = 1; flag && i <= m;i++) //is it optimize tho?
     {
         flag = arr[i];
     }
-    std::cout << ( (flag) ? "YES" : "NO" );
+    std::cout << ( (flag) ? "YES" : "NO" ); //why two ifs if you can do none?
 
 }
